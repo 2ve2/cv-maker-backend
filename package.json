@@ -1,0 +1,29 @@
+{
+  "name": "cv-makers-backend",
+  "scripts": {
+    "dev": "bun run --hot src/app.ts",
+    "start": "bun run src/app.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "dotenv": "^17.3.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "neondatabase/serverless",
+    "@paralleldrive/cuid2": "^3.3.0",
+    "drizzle-kit": "^0.31.9",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.8",
+    "zod": "^4.3.6"
+  }
+}
